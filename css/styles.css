@@ -293,10 +293,10 @@ p {
   margin-bottom: 8px;
 }
 
-.advantage-icon {
+/* .advantage-icon {
   width: 64px;
   height: 64px;
-}
+} */
 
 .advantage .item {
   width: calc((100% - 72px) / 4);
@@ -349,7 +349,7 @@ p {
   display: flex;
 }
 
-.advantage .item {
+.our-team .item {
   width: calc((100% - 72px) / 4);
 }
 
@@ -600,4 +600,4 @@ p {
   background-color: var(--active-footer-social-bg-color);
 }
 
-/* =============== FOOTER =============== */ ;
+/* =============== FOOTER =============== */
