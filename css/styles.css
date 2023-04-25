@@ -24,6 +24,7 @@
   --customers-icon-color: #8e8f99;
   --customers-item-border-color: #8e8f99;
   --customers-link-color: #8e8f99;
+  --active-customers-item-border-color: #404bbf;
   --active-customers-icon-color: #404bbf;
   --non-active-color: #4d5ae5;
   --active-color: #404bbf;
@@ -392,7 +393,6 @@ p {
 
 .social-list {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
   gap: 24px;
 }
@@ -400,9 +400,6 @@ p {
 .social-list-item {
   width: 40px;
   height: 40px;
-  /* background-color: var(--team-social-bg-color); */
-  /* border-radius: 50%; */
-  /* justify-content: center; */
   display: flex;
   align-items: center;
 }
@@ -455,7 +452,7 @@ p {
   height: 100%;
   border: 1px solid var(--customers-item-border-color);
   border-radius: 4px;
-  color: #8e8f99;
+  color: var(--customers-icon-color);
   justify-content: center;
   align-items: center;
 }
@@ -466,8 +463,8 @@ p {
 
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--active-customers-icon-color);
   color: var(--active-customers-icon-color);
+  border: 1px solid var(--active-customers-item-border-color);
 }
 
 /* =============== PORTFOLIO =============== */
