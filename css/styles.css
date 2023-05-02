@@ -391,13 +391,6 @@ p {
 .our-team .description {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* padding-left: 16px;
-  padding-right: 16px; */
-
-  /* background-color: var(--body-background-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px; */
 }
 
 .our-team .title-three {
@@ -785,7 +778,6 @@ p {
   transform: translate(-50%, -50%) scale(1);
   padding-left: 24px;
   padding-right: 24px;
-  /* padding: 72px 24px 100px 24px; */
   width: 408px;
   min-height: 576px;
   background-color: var(--modal-bg-color);
@@ -793,7 +785,6 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--animation-transition);
-  outline: 1px solid tomato;
 }
 
 .backdrop.is-hidden .modal {
@@ -918,7 +909,6 @@ p {
 
 .checkbox-wrap {
   margin-top: 16px;
-  /* padding-bottom: 24px; */
   display: flex;
   align-items: center;
   gap: 8px;
