@@ -773,12 +773,13 @@ p {
   transition: fill var(--animation-transition);
 }
 
+.modal-close-btn:focus,
 .modal-close-btn:hover {
   background-color: var(--active-color);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon {
-  /* fill: var(--body-background-color); */
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--body-background-color);
 }
 
