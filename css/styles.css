@@ -172,7 +172,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  transition: color 250ms var(--animation-transition);
+  transition: color var(--animation-transition);
 }
 
 .current::after {
@@ -211,7 +211,7 @@ p {
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
-  transition: color 250ms var(--animation-transition);
+  transition: color var(--animation-transition);
 }
 
 .contact-item:hover,
@@ -270,7 +270,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms var(--animation-transition);
+  transition: background-color var(--animation-transition);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -439,7 +439,7 @@ p {
   height: 100%;
   background-color: var(--team-social-bg-color);
   border-radius: 50%;
-  transition: background-color 250ms var(--animation-transition);
+  transition: background-color var(--animation-transition);
 }
 
 .social-list-icon {
@@ -485,8 +485,8 @@ p {
   color: var(--customers-icon-color);
   justify-content: center;
   align-items: center;
-  transition: color 250ms var(--animation-transition),
-    border 250ms var(--animation-transition);
+  transition: color var(--animation-transition),
+    border var(--animation-transition);
 }
 
 .customers-icon {
@@ -532,10 +532,10 @@ p {
   border: 1px solid var(--portfolio-btn-border-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: color 250ms var(--animation-transition),
-    background-color 250ms var(--animation-transition),
-    box-shadow 250ms var(--animation-transition),
-    border-color 250ms var(--animation-transition);
+  transition: color var(--animation-transition),
+    background-color var(--animation-transition),
+    box-shadow var(--animation-transition),
+    border-color var(--animation-transition);
 }
 
 .portfolio-btn:hover,
@@ -589,7 +589,7 @@ p {
   background: var(--body-background-color);
   border: 1px solid var(--portfolio-frame-border-color);
   border-top: none;
-  transition: border-color 250ms var(--animation-transition);
+  transition: border-color var(--animation-transition);
 }
 
 .portfolio-second-title {
@@ -611,7 +611,7 @@ p {
 
 .portfolio-link {
   display: block;
-  transition: box-shadow 250ms var(--animation-transition);
+  transition: box-shadow var(--animation-transition);
 }
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
@@ -700,7 +700,7 @@ p {
   height: 100%;
   background-color: var(--footer-social-link-color);
   border-radius: 50%;
-  transition: background-color 250ms var(--animation-transition);
+  transition: background-color var(--animation-transition);
 }
 
 .footer-social-link:hover,
@@ -760,8 +760,9 @@ p {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--modal-btn-bg-color);
+  background-color: var(--modal-btn-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--animation-transition);
 }
 
 .modal-btn-icon {
@@ -769,11 +770,11 @@ p {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  transition: fill var(--animation-transition);
 }
 
 .modal-btn:hover {
   background-color: var(--active-color);
-  /* border-radius: 4px; */
 }
 
 .modal-btn:hover .modal-btn-icon {
