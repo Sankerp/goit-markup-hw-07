@@ -749,7 +749,7 @@ p {
   transform: translate(-50%, -50%) scale(0.6);
 }
 
-.modal-btn {
+.modal-close-btn {
   position: absolute;
   right: 24px;
   top: 24px;
@@ -765,7 +765,7 @@ p {
   transition: background-color var(--animation-transition);
 }
 
-.modal-btn-icon {
+.modal-close-btn-icon {
   display: inline-block;
   stroke-width: 0;
   stroke: currentColor;
@@ -773,11 +773,11 @@ p {
   transition: fill var(--animation-transition);
 }
 
-.modal-btn:hover {
+.modal-close-btn:hover {
   background-color: var(--active-color);
 }
 
-.modal-btn:hover .modal-btn-icon {
+.modal-close-btn:hover .modal-close-btn-icon {
   /* fill: var(--body-background-color); */
   fill: var(--body-background-color);
 }
