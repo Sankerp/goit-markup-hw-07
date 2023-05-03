@@ -884,7 +884,7 @@ p {
 
 .modal-form-input:hover,
 .modal-form-input:focus {
-  border-color: var(--modal-active-input-border-color);
+  border: 1px solid var(--modal-active-input-border-color);
 }
 
 .modal-form-icon {
@@ -892,13 +892,57 @@ p {
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
-  fill: var(--modal-form-icon-color);
+  fill: currentColor;
   transition: fill var(--animation-transition);
 }
-.modal-form-input:hover + .modal-form-icon,
-.modal-form-input:focus + .modal-form-icon {
+
+.input-box {
+  color: var(--modal-form-icon-color);
+}
+
+.input-box:hover {
+  color: var(--modal-active-form-icon-color);
+}
+
+.input-box:hover .modal-form-input {
+  border-color: var(--modal-active-form-icon-color);
+}
+
+.modal-form-label:hover .modal-form-icon {
+  fill: var(-modal-active-form-icon-color);
+}
+
+/* Ховер на групу, при ховері на ім'я є бордер, нема іконки */
+/* .input-box:hover > .modal-form-icon,
+.input-box:focus > .modal-form-icon {
   fill: var(--modal-active-form-icon-color);
 }
+.input-box:hover > .modal-form-input,
+.input-box:focus > .modal-form-input {
+  border-color: var(--modal-active-form-icon-color);
+} */
+
+/* ???????? */
+/* .input-box:hover .modal-form-input + .modal-form-icon,
+.input-box:focus .modal-form-input + .modal-form-icon {
+  fill: var(--modal-active-form-icon-color);
+}
+.input-box:hover .modal-form-input,
+.input-box:focus .modal-form-input {
+  border-color: var(--modal-active-form-icon-color);
+} */
+
+/* .modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon,
+.modal-form-icon:hover,
+.modal-form-icon:focus {
+  fill: var(--modal-active-form-icon-color);
+} */
+
+/* .modal-form-icon:hover .modal-form-input,
+.modal-form-icon:focus .modal-form-input {
+  border-color: var(--modal-active-form-icon-color);
+} */
 
 .modal-form-comment {
   height: 120px;
