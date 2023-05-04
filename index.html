@@ -15,7 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/var.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <!-- Header -->
@@ -25,7 +31,7 @@
           <a class="link header-logo" href="./index.html"
             >Web<span class="header-logo-span">Studio</span></a
           >
-          <ul class="header-flex list">
+          <ul class="header-list list">
             <li class="nav-item">
               <a class="nav-link current link" href="./index.html">Studio</a>
             </li>
@@ -51,6 +57,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-togle js-open-menu" type="button">
+          <svg class="menu-togle-svg" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -64,11 +75,11 @@
         </div>
       </section>
       <!-- Our advantage -->
-      <section class="advantage">
+      <section class="advantage section">
         <div class="container">
           <h2 hidden class="advantage-title">Our advantage</h2>
-          <ul class="list">
-            <li class="item">
+          <ul class="advantage-list list">
+            <li class="advantage-item">
               <div class="advantage-thumb">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -80,7 +91,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage-item">
               <div class="advantage-thumb">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -92,7 +103,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage-item">
               <div class="advantage-thumb">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -104,7 +115,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="item">
+            <li class="advantage-item">
               <div class="advantage-thumb">
                 <svg class="advantage-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -120,11 +131,11 @@
         </div>
       </section>
       <!-- What are we doing -->
-      <section class="our-job">
+      <section class="our-job section">
         <div class="container">
           <h2 class="title-two">What are we doing</h2>
-          <ul class="list">
-            <li class="item">
+          <ul class="our-job-list list">
+            <li class="our-job-item">
               <img
                 class="image"
                 src="./images/monitor.jpg"
@@ -133,7 +144,7 @@
                 height="300"
               />
             </li>
-            <li class="item">
+            <li class="our-job-item">
               <img
                 class="image"
                 src="./images/smartphone.jpg"
@@ -142,7 +153,7 @@
                 height="300"
               />
             </li>
-            <li class="item">
+            <li class="our-job-item">
               <img
                 class="image"
                 src="./images/notebook.jpg"
@@ -155,7 +166,7 @@
         </div>
       </section>
       <!-- Our Team -->
-      <section class="our-team">
+      <section class="our-team section">
         <div class="container">
           <h2 class="title-two">Our Team</h2>
           <ul class="list our-team-list">
@@ -166,7 +177,7 @@
                 alt="Man in a shirt"
                 width="264"
               />
-              <div class="description">
+              <div class="our-team-description">
                 <h3 class="title-three">Mark Guerrero</h3>
                 <p class="main-text">Product Designer</p>
                 <ul class="social-list list">
@@ -217,7 +228,7 @@
                 alt="Smiling man"
                 width="264"
               />
-              <div class="description">
+              <div class="our-team-description">
                 <h3 class="title-three">Tom Ford</h3>
                 <p class="main-text">Frontend Developer</p>
                 <ul class="social-list list">
@@ -269,7 +280,7 @@
                 alt="Woman in a pink blouse"
                 width="264"
               />
-              <div class="description">
+              <div class="our-team-description">
                 <h3 class="title-three">Camila Garcia</h3>
                 <p class="main-text">Marketing</p>
                 <ul class="social-list list">
@@ -323,7 +334,7 @@
                 alt="Man in a t-shirt"
                 width="264"
               />
-              <div class="description">
+              <div class="our-team-description">
                 <h3 class="title-three">Daniel Wilson</h3>
                 <p class="main-text">UI Designer</p>
                 <ul class="social-list list">
@@ -374,7 +385,7 @@
         </div>
       </section>
       <!-- Customers -->
-      <section class="customers">
+      <section class="customers section">
         <div class="container">
           <h2 class="title-two">Customers</h2>
           <ul class="list">
@@ -570,6 +581,65 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu" type="button"></button>
+      <ul class="header-list list">
+        <li class="nav-item">
+          <a class="nav-link current link" href="./index.html">Studio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="contact">
+        <ul class="contact-list list">
+          <li class="contact-item">
+            <a class="link contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a class="link contact-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul>
+        <li>
+          <a class="social-list-link" href="https://instagram.com">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-list-link" href="https://instagram.com">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-list-link" href="https://instagram.com">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-list-link" href="https://instagram.com">
+            <svg class="social-list-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
