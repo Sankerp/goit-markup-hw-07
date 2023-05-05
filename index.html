@@ -139,6 +139,7 @@
               <img
                 class="image"
                 src="./images/monitor.jpg"
+                srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
                 alt="Monitor with open website"
                 width="360"
                 height="300"
@@ -148,6 +149,10 @@
               <img
                 class="image"
                 src="./images/smartphone.jpg"
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone@2x.jpg 2x
+                "
                 alt="smartphone with open application"
                 width="360"
                 height="300"
@@ -157,6 +162,7 @@
               <img
                 class="image"
                 src="./images/notebook.jpg"
+                srcset="./images/notebook.jpg 1x, ./images/notebook@2x.jpg 2x"
                 alt="people take smartphone near the notebook"
                 width="360"
                 height="300"
@@ -174,8 +180,10 @@
               <img
                 class="image"
                 src="./images/photo_one.jpg"
-                alt="Man in a shirt"
+                alt="Man in a
+              shirt"
                 width="264"
+                srcset="./images/photo_one.jpg 1x, ./images/photo_one@2x.jpg 2x"
               />
               <div class="our-team-description">
                 <h3 class="title-three">Mark Guerrero</h3>
@@ -227,6 +235,7 @@
                 src="./images/photo_two.jpg"
                 alt="Smiling man"
                 width="264"
+                srcset="./images/photo_two.jpg 1x, ./images/photo_two@2x.jpg 2x"
               />
               <div class="our-team-description">
                 <h3 class="title-three">Tom Ford</h3>
@@ -279,6 +288,10 @@
                 src="./images/photo_three.jpg"
                 alt="Woman in a pink blouse"
                 width="264"
+                srcset="
+                  ./images/photo_three.jpg    1x,
+                  ./images/photo_three@2x.jpg 2x
+                "
               />
               <div class="our-team-description">
                 <h3 class="title-three">Camila Garcia</h3>
@@ -333,6 +346,10 @@
                 src="./images/phono_four.jpg"
                 alt="Man in a t-shirt"
                 width="264"
+                srcset="
+                  ./images/photo_four.jpg    1x,
+                  ./images/photo_four@2x.jpg 2x
+                "
               />
               <div class="our-team-description">
                 <h3 class="title-three">Daniel Wilson</h3>
@@ -510,9 +527,9 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h1 class="main-text modal-title">
+        <p class="main-text modal-title">
           Leave your contacts and we will call you back
-        </h1>
+        </p>
         <form class="modal-form">
           <label class="modal-form-label">
             <span class="modal-form-text">Name</span>
@@ -582,62 +599,83 @@
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="js-close-menu" type="button"></button>
-      <ul class="header-list list">
-        <li class="nav-item">
-          <a class="nav-link current link" href="./index.html">Studio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link" href="">Contacts</a>
-        </li>
-      </ul>
-      <address class="contact">
-        <ul class="contact-list list">
-          <li class="contact-item">
-            <a class="link contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+      <button class="js-close-menu modal-close-btn" type="button">
+        <svg class="modal-close-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-header-navigation">
+        <ul class="mobile-header-list list">
+          <li class="mobile-header-item">
+            <a
+              class="mobile-header-link mobile-current link"
+              href="./index.html"
+              >Studio</a
             >
           </li>
-          <li class="contact-item">
-            <a class="link contact-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
+          <li class="mobile-header-item">
+            <a class="mobile-header-link link" href="./portfolio.html"
+              >Portfolio</a
             >
+          </li>
+          <li class="mobile-header-item">
+            <a class="mobile-header-link link" href="">Contacts</a>
           </li>
         </ul>
-      </address>
-      <ul>
-        <li>
-          <a class="social-list-link" href="https://instagram.com">
-            <svg class="social-list-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-list-link" href="https://instagram.com">
-            <svg class="social-list-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-list-link" href="https://instagram.com">
-            <svg class="social-list-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a class="social-list-link" href="https://instagram.com">
-            <svg class="social-list-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
+      <div>
+        <div class="mobile-header-contact">
+          <ul class="mobile-header-contact-list list">
+            <li class="mobile-header-contact-item">
+              <a
+                class="link mobile-header-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-header-contact-item">
+              <a class="link mobile-header-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-header-flex-social">
+          <ul class="mobile-header-social-list list">
+            <li class="mobile-header-social-item">
+              <a class="mobile-header-social-link" href="">
+                <svg class="mobile-header-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-header-social-item">
+              <a class="mobile-header-social-link" href="">
+                <svg class="mobile-header-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-header-social-item">
+              <a class="mobile-header-social-link" href="">
+                <svg class="mobile-header-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-header-social-item">
+              <a class="mobile-header-social-link" href="">
+                <svg class="mobile-header-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
