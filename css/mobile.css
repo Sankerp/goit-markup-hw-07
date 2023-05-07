@@ -764,7 +764,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
+  /* width: 16px; */
+  min-width: 16px;
   height: 16px;
   border: 1px solid var(--modal-input-border-color);
   border-radius: 2px;
