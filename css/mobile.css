@@ -879,11 +879,10 @@
 .mobile-header-tel {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
-  /* identical to box height, or 111% */
-
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--active-color);
 }
 
 .mobile-header-mail {
@@ -901,7 +900,8 @@
 
 .mobile-header-social-list {
   display: flex;
-  gap: 56px;
+  /* gap: 56px; */
+  justify-content: space-between;
 }
 .mobile-header-social-item {
   width: 40px;
@@ -980,5 +980,19 @@
   }
   .menu-togle {
     display: block;
+  }
+  .menu-container.is-open {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 428px;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .mobile-header-tel {
+    font-size: calc((100vw - 320px) / (428 - 320) * (36 - 20) + 20px);
   }
 }
