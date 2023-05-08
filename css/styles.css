@@ -508,9 +508,9 @@ p {
   margin-right: 24px;
 }
 
-.portfolio-buttons .list:last-child {
+/* .portfolio-buttons .list:last-child {
   margin-right: 0;
-}
+} */
 
 .portfolio-btn {
   padding: 12px 24px;
